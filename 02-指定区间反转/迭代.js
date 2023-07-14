@@ -17,7 +17,7 @@ function reverseBetween(head, m, n) {
 
     for (i = 0; i < n - m; i++) {
       let temp = cur.next;
-      cur.next = cur.next.next;
+      cur.next = temp.next;
       temp.next = pre.next;
       pre.next = temp;
     }
