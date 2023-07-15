@@ -23,5 +23,6 @@ function mergeKLists(lists) {
   for (i = 0; i < lists.length; i++) {
     newNode = Merge(newNode, lists[i]);
   }
+
   return newNode;
 }
