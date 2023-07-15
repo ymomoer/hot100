@@ -40,3 +40,5 @@ pHead2.next = node5;
 node5.next = node6;
 node6.next = node7;
 node7.next = node8;
+
+Merge(pHead1, pHead2);
