@@ -13,6 +13,3 @@ function EntryNodeOfLoop(pHead) {
     }
   }
 }
-module.exports = {
-  EntryNodeOfLoop: EntryNodeOfLoop,
-};
