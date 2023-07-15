@@ -26,6 +26,7 @@ function reverseKGroup(head, k) {
     pre = current;
     current = t;
   }
+
   head.next = reverseKGroup(current, k);
   return pre;
 }
