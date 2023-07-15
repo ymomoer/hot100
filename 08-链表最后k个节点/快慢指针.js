@@ -26,6 +26,7 @@ function FindKthToTail(pHead, k) {
     slow = slow.next;
     fast = fast.next;
   }
+
   return slow;
 }
 
