@@ -2,7 +2,6 @@ function ListNode(x) {
   this.val = x;
   this.next = null;
 }
-
 /**
  *
  * @param head ListNode类
