@@ -7,6 +7,7 @@ function ReverseList(pHead) {
   if (pHead === null || pHead.next === null) {
     return pHead;
   }
+
   let arr = new Array();
   while (pHead != null) {
     arr.push(pHead);
