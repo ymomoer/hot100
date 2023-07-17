@@ -33,6 +33,7 @@ function isPail(head) {
   }
   return true;
 }
+
 module.exports = {
   isPail: isPail,
 };
