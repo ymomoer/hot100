@@ -11,11 +11,11 @@ function reverseBetween(head, m, n) {
   let pre = dummyNode;
   let cur = head;
 
-  for (i = 0; i < m - 1; i++) {
+  for (let i = 0; i < m - 1; i++) {
     pre = pre.next;
     cur = cur.next;
 
-    for (i = 0; i < n - m; i++) {
+    for (let i = 0; i < n - m; i++) {
       let temp = cur.next;
       cur.next = temp.next;
       temp.next = pre.next;
