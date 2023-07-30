@@ -8,7 +8,7 @@ function ReverseList(pHead) {
   }
   let newHead = null;
   cur = pHead;
-  while (cur != null) {
+  while (cur !== null) {
     let temp = cur.next;
     cur.next = newHead;
     newHead = cur;

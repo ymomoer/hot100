@@ -4,7 +4,7 @@ function ListNode(x) {
 }
 
 function Merge(pHead1, pHead2) {
-  let newNode = new ListNode(null);
+  let newNode = new ListNode(-1);
 
   if (pHead1 == null) return pHead2;
   if (pHead2 == null) return pHead1;

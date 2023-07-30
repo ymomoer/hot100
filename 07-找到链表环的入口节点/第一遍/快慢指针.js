@@ -4,7 +4,7 @@ function ListNode(x) {
 }
 
 function EntryNodeOfLoop(pHead) {
-  if (pHead == null) return null;
+  if (pHead === null) return null;
   let slow = pHead;
   let fast = pHead;
   while (fast && fast.next) {
