@@ -4,19 +4,17 @@ function ListNode(x) {
 }
 
 function Merge(pHead1, pHead2) {
-  let newNode = new ListNode(-1);
-
-  if (pHead1 == null) return pHead2;
-  if (pHead2 == null) return pHead1;
-  if (pHead1 == null && pHead2 == null) return null;
-  if (pHead1.val < pHead2.val) {
-    newNode = pHead1;
-    newNode.next = Merge(pHead1.next, pHead2);
+  if (pHead1 === null && pHead2 === null) return null;
+  if (pHead1 === null || pHead2 === null) return pHead1 ? pHead1 : pHead2;
+  let dummyNode = new ListNode(-1);
+  if (pHead1.val <= pHead2.val) {
+    dummyNode.next = pHead1;
+    pHead1.next = Merge(pHead1.next, pHead2);
   } else {
-    newNode = pHead2;
-    newNode.next = Merge(pHead1, pHead2.next);
+    dummyNode.next = pHead2;
+    pHead2.next = Merge(pHead1, pHead2.next);
   }
-  return newNode;
+  return dummyNode.next;
 }
 
 let pHead1 = new ListNode(1);
