@@ -39,6 +39,7 @@ function spiralOrder(matrix) {
   }
   return result;
 }
+
 module.exports = {
   spiralOrder: spiralOrder,
 };
