@@ -30,7 +30,7 @@ Solution.prototype.get = function (key) {
  */
 Solution.prototype.set = function (key, value) {
   // write code here
-  if ((this.map.size = this.max)) {
+  if (this.map.size === this.max) {
     let last = this.map.keys().next();
     this.map.delete(last.value);
   }
